@@ -54,7 +54,7 @@ public class Order {
 	
 	@Override
 	public int hashCode() {
-		return Objects.hash(comments, customerNumber, orderDate, orderNumber, requiredDate, shippedDate, status);
+		return Objects.hash(orderNumber, orderDate, requiredDate, shippedDate, status, comments, customerNumber);
 	}
 
 	@Override
@@ -74,7 +74,7 @@ public class Order {
 
 	@Override
 	public String toString() {
-		return "Order [orderNumber=" + orderNumber + ", orderDate=" + orderDate + ", requiredDate=" + requiredDate
+		return "orderNumber=" + orderNumber + ", orderDate=" + orderDate + ", requiredDate=" + requiredDate
 				+ ", shippedDate=" + shippedDate + ", status=" + status + ", comments=" + comments + ", customerNumber="
 				+ customerNumber + "]";
 	}
